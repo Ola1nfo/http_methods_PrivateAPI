@@ -1,21 +1,105 @@
-table, td, th, tr{
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: center;
-    font-size: 25px;
-    width: 800px;
-    margin: 0 auto;
+body {
+    background-color: rgb(120, 231, 144);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #555;
 }
 
-body{
+.konvektor {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
     text-align: center;
 }
-input{
-    margin: 10px;
-    font-size: 20px;
-    padding: 5px;
+
+h1, p {
+    color: #555;
 }
-button{
+
+p {
+    margin-bottom: 10px;
     font-size: 20px;
-    padding: 6px 15px;
+}
+
+#fromCurrencyInput, #toCurrencyInput, #suma{
+    font-size: 18px;
+    padding: 8px;
+}
+
+#convertBtn{
+    margin-top: 10px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #0b9e0e;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0b6c0d;
+}
+
+.currencyDisplay{
+    text-align: center;
+    margin: 20px;
+}
+
+#inputDate{
+    font-size: 20px;
+    padding: 8px;
+    color: #555;
+}
+
+#go, #now{
+    margin: 5px;
+
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #555;
+    text-align: center;
+}
+
+table th {
+    background-color: #0b9e0e;
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(even) td {
+    background-color: #f1f1f1;
 }

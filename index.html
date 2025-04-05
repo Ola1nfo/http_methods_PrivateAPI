@@ -8,17 +8,50 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <input id="inputDate" type="date">
-    <button id="go">go</button>
-    <button id="now">now</button>
-    <table>
-        <tr>
-            <th>baseCurrency</th>
-            <th>currency</th>
-            <th>saleRateNB</th>
-            <th>purchaseRateNB</th>
-        </tr>
-    </table>
+    <div class="konvektor">
+        <div>
+            <p>Валюта з якої переводимо:</p>
+            <input type="text" id="fromCurrencyInput" placeholder="Введіть валюту">
+        </div>
+        
+        <div>
+            <p>Валюта в яку переводимо:</p>
+            <input type="text" id="toCurrencyInput" placeholder="Введіть валюту">
+        </div>
+        
+        <div>
+            <p>Сума для переведення:</p>
+            <input type="number" id="suma" placeholder="Введіть суму">
+        </div>
+        
+        <button id="convertBtn">Перевести</button>
+        
+        <p id="result">Рузультат: </p>
+    </div>
+    <div class="currencyDisplay">
+        <input id="inputDate" type="date">
+        <select id="filterCurrency">
+            <option value="all">Всі</option>
+            <option value="allFamous">Відомі</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="PLN">PLN</option>
+            <option value="CZK">CZK</option>
+        </select>
+        <button id="go">Конкретна дата</button>
+        <button id="now">Сьогоднішня дата</button>
+    </div>
+    <div class="tableDisplay">
+        <p id="info">Курси на дату: </p>
+        <table>
+            <tr>
+                <th>Базова валюта</th>
+                <th>Валюта для обміну</th>
+                <th>Курс продажу</th>
+                <th>Курс купівлі</th>
+            </tr>
+        </table>
+    </div>
 
     <script src="./js/main.js"></script>
 </body>

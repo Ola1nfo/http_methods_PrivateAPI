@@ -2,7 +2,6 @@ body {
     background-color: rgb(120, 231, 144);
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
     color: #555;
 }
@@ -13,6 +12,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
+    height: 400px;
     text-align: center;
 }
 
